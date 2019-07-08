@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <title th:text="${title}">My Cheeses</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link th:href="@{/css/mdb.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+    <script type="text/javascript" th:src="@{/js/script.js}"></script>
+</head>
+<body>
+<nav th:fragment="navigation">
+    <ul class="nav nav-pills ">
+        <li class="nav-item">
+            <a class="nav-link" href="/cheese">List</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="/cheese/add">Add</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="/cheese/remove">Remove</a>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>
